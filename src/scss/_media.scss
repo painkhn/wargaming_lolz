@@ -1,0 +1,105 @@
+@media screen and (max-width: 1000px) {
+    .main {
+        &__login {
+            &-social {
+                &-list {
+                    grid-template-columns: repeat(1, minmax(0, 1fr));
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        &__inner {
+            min-height: 0;
+            height: 50px;
+            justify-content: flex-start;
+            padding: 0 12px;
+
+            img {
+                height: 30px;
+            }
+        }
+
+        &__navigation {
+            #headerCreate {
+                display: none;
+            }
+            &-create_icon {
+                display: block;
+            }
+        }
+    }
+
+    .main {
+        padding: 0 !important;
+        &__inner {
+            padding: 0 !important;
+            &-head {
+                display: none;
+            }
+        }
+        
+        &__login {
+            flex-direction: column;
+
+            &-remember {
+                display: none !important;
+            }
+
+            &-submit {
+                width: 100%;
+            }
+
+            &-hidden_title {
+                display: block !important;
+                color:#373F45;
+            }
+
+            &-form {
+                padding: 30px 15px 0 !important;
+                width: 100%;
+            }
+
+            &-social {
+                padding: 16px 15px 50px !important;
+                width: 100%;
+
+                .main__login-title {
+                    display: none;
+                }
+
+                .main__login-list {
+                    padding-top: 16px;
+                    display: block !important;
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__inner {
+            flex-direction: column;
+            justify-content: center !important;
+            align-items: center;
+            text-align: center;
+            gap: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header {
+        &__navigation {
+            &-list li:last-child {
+                display: none;
+            }
+
+            .text-gold {
+                display: none;
+            }
+        }
+    }
+}

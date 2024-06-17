@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="header__navigation px-3 min-h-9 flex items-center justify-between">
+            <ul class="header__navigation-list flex items-center gap-5 text-xs">
+                <li>
+                    <a href="#!">
+                        <img src="src/img/wargaming-icon.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">Games <span class="arrow">></span></a>
+                </li>
+                <li>
+                    <a href="#!">Services <span class="arrow">></span></a>
+                </li>
+                <li>
+                    <a href="#!" class="text-gold">Premium Shop</a>
+                </li>
+                <li>
+                    <a href="#!">Player Support</a>
+                </li>
+            </ul>
+            <a href="#!" class="header__navigation-create text-white text-sm font-thin">
+                <svg class="header__navigation-create_icon hidden opacity-50" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19 18.0039V17C19 15.8954 18.1046 15 17 15C15.8954 15 15 15.8954 15 17V18.0039M10 21H4C4 17.134 7.13401 14 11 14C11.3395 14 11.6734 14.0242 12 14.0709M15.5 21H18.5C18.9659 21 19.1989 21 19.3827 20.9239C19.6277 20.8224 19.8224 20.6277 19.9239 20.3827C20 20.1989 20 19.9659 20 19.5C20 19.0341 20 18.8011 19.9239 18.6173C19.8224 18.3723 19.6277 18.1776 19.3827 18.0761C19.1989 18 18.9659 18 18.5 18H15.5C15.0341 18 14.8011 18 14.6173 18.0761C14.3723 18.1776 14.1776 18.3723 14.0761 18.6173C14 18.8011 14 19.0341 14 19.5C14 19.9659 14 20.1989 14.0761 20.3827C14.1776 20.6277 14.3723 20.8224 14.6173 20.9239C14.8011 21 15.0341 21 15.5 21ZM15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <span id="headerCreate">Create account</span>
+            </a>
+        </nav>
+        <div class="header__inner min-h-28 flex items-center justify-center">
+            <a href="/">
+                <img src="src/img/logo.png" alt="">
+            </a>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="main h-main">
+        <div class="main__inner mx-auto my-0 text-3xl">
+            <!-- main info -->
+            <div class="main__inner-head text-center">
+                <h1 class="main__inner-title mb-6">LOG IN</h1>
+                <p class="main__inner-desc mb-8">Use only this page to log into your Wargaming.net account. You will be
+                    authenticated on all Wargaming.net websites. To avoid any chance of a security breach, do not enter
+                    your login and password on other websites.</p>
+            </div>
+            <div class="relative">
+                <!-- login block -->
+                <div class="main__login w-full h-auto flex">
+                    <form class="main__login-form w-1/2" id="loginForm">
+                        <!-- login mobile title -->
+                        <h2 class="main__login-hidden_title hidden text-2xl font-bold">LOG IN</h2>
+                        <!-- login desktop title -->
+                        <h2 class="main__login-title mb-8">Use your Wargaming.net account to log in</h2>
+                        <!-- email input -->
+                        <input class="main__login-input w-full h-12 text-base px-4 mb-4" type="email" name="email"
+                            id="email" placeholder="Email address" required>
+                            <!-- password input -->
+                        <input class="main__login-input w-full h-12 text-base px-4 mb-4" type="password" name="password"
+                            id="password" placeholder="Password" required>
+                        <div class="flex items-center gap-5 mb-4">
+                            <!-- login submit -->
+                            <input type="submit" value="Log in"
+                            class="main__login-submit text-sm font-bold px-10 py-4 bg-black text-white rounded-sm">
+                            <!-- remember me -->
+                            <label for="remember" class="main__login-remember text-sm">
+                                <input class="mr-2" type="checkbox" name="remember" id="remember">
+                                Remember me
+                            </label>
+                        </div>
+                        <ul class="main__login-list text-sm">
+                            <li>Cannot log in? <a href="#!">Recover Account</a></li>
+                            <li>Don’t have a Wargaming.net ID yet? <a href="#!">Create account</a></li>
+                        </ul>
+                    </form>
+                    <!-- login social methods -->
+                    <div class="main__login-social w-1/2" id="loginSocial">
+                        <h2 class="main__login-title mb-8">Log in with your social profile:</h2>
+                        <ul class="main__login-social-list grid grid-cols-2 gap-5">
+                            <li>
+                                <div class="main__login-social-box main__login-social-box_amazon h-14">
+                                    <a href="#!">
+                                        <img src="src/img/icons/icon_amazon-d.svg" alt="">
+                                        Amazon
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="main__login-social-box main__login-social-box_facebook h-14">
+                                    <a href="#!">
+                                        <img src="src/img/icons/icon_facebook-c.svg" alt="">
+                                        Facebook
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="main__login-social-box main__login-social-box_google h-14">
+                                    <a href="#!">
+                                        <img src="src/img/icons/icon_google-d.svg" alt="">
+                                        Google
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="main__login-social-box main__login-social-box_microsoft h-14">
+                                    <a href="#!">
+                                        <img src="src/img/icons/icon_live-d.svg" alt="">
+                                        Microsoft
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="main__login-social-box main__login-social-box_twitch h-14">
+                                    <a href="#!">
+                                        <img src="src/img/icons/icon_twitch-d.svg" alt="">
+                                        Twitch
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="main__login-social-box main__login-social-box_steam h-14">
+                                    <a href="#!">
+                                        <img src="src/img/icons/icon_steam-d.svg" alt="">
+                                        Steam
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="main__login-social-box main__login-social-box_egs h-14">
+                                    <a href="#!">
+                                        <img src="src/img/icons/icon_egs-d.svg" alt="">
+                                        Epic Games
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="main__login-list hidden text-sm">
+                            <li>Don’t have a Wargaming.net ID yet? <a href="#!">Create account</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- login block shadow -->
+                <div class="abosolute bottom-0">
+                    <img src="src/img/login_shadow.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__inner flex justify-between mx-auto my-0">
+            <div>
+                <ul class="footer__inner-list flex items-center text-xs gap-5 mb-4">
+                    <li><a href="#!">End User License Agreement</a></li>
+                    <li><a href="#!">Privacy Policy</a></li>
+                    <li><a href="#!">Terms of Service</a></li>
+                    <li><a href="#!">Parental Control</a></li>
+                </ul>
+                <p class="text-xs">© 2009–2024 Wargaming.net All rights reserved</p>
+            </div>
+            <button class="footer__inner-country text-sm h-4" type="button" onclick="openFooterModal()">Europe (English) <span class="arrow">></span></button>
+        </div>
+        <!-- countries -->
+        <div class="footer__modal relative" id="footerModal">
+            <p class="mb-5 text-xs">The selected region may affect the website content. Your account is valid in one region only.</p>
+            <ul class="footer__modal-list flex justify-between relative z-10">
+                <li>
+                    <span>NORTH AMERICA:</span>
+                    <ul class="mt-5">
+                        <li><a href="#!">English</a></li>
+                        <li><a href="#!">Español rioplatense</a></li>
+                        <li><a href="#!">Português</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>EUROPE:</span>
+                    <ul class="mt-5">
+                        <li><a href="#!">English</a></li>
+                        <li><a href="#!">Čeština</a></li>
+                        <li><a href="#!">Deutsch</a></li>
+                        <li><a href="#!">Español</a></li>
+                        <li><a href="#!">Français</a></li>
+                        <li><a href="#!">Magyar</a></li>
+                        <li><a href="#!">Polski</a></li>
+                        <li><a href="#!">Русский</a></li>
+                        <li><a href="#!">Türkçe</a></li>
+                        <li><a href="#!">Italiano</a></li>
+                        <li><a href="#!">Українська</a></li>
+                        <li><a href="#!">Қазақша</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>ASIA:</span>
+                    <ul class="mt-5">
+                        <li><a href="#!">English</a></li>
+                        <li><a href="#!">日本語</a></li>
+                        <li><a href="#!">ไทย</a></li>
+                        <li><a href="#!">Tiếng Việt</a></li>
+                        <li><a href="#!">简体中文</a></li>
+                        <li><a href="#!">繁體中文</a></li>
+                        <li><a href="#!">한국어</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- countries bg -->
+            <img src="src/img/region-bg_eu.svg" alt="" class="absolute top-0 w-52 opacity-20 z-0">
+        </div>
+    </footer>
+
+    <!-- script and JQ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="src/script.js"></script>
+</body>
+</html>
